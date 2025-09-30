@@ -45,6 +45,12 @@ Le projet est organisé en trois niveaux de difficulté :
 mvn clean compile
 ```
 
+### Exécution de la Démonstration
+Pour voir tous les exercices en action avec des exemples :
+```bash
+mvn clean compile exec:java -Dexec.mainClass="com.streams.exercises.DemoExamples"
+```
+
 ### Exécution des Tests
 ```bash
 mvn test
@@ -61,7 +67,8 @@ src/
 │                   ├── Person.java                      # Classe de modèle
 │                   ├── StreamExercisesBasic.java        # Exercices de base
 │                   ├── StreamExercisesIntermediate.java # Exercices intermédiaires
-│                   └── StreamExercisesAdvanced.java     # Exercices avancés
+│                   ├── StreamExercisesAdvanced.java     # Exercices avancés
+│                   └── DemoExamples.java                # Démonstrations
 └── test/
     └── java/
         └── com/
